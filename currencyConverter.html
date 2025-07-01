@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="currencyConverter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="container">
+        <h1>Currency Converter</h1>
+        <form>
+            <div id="amount">
+                <label for="cur1">Enter Amount</label>
+                <br>
+                <input id="cur1" type="text" value="1">
+            </div>
+            <div id="dropdown">
+                <div id="from">
+                    <p>From</p>
+                    <div id="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from">
+                        </select>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-right-left"></i>
+
+                <div id="to">
+                    <p>To</p>
+                    <div id="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="msg"></div>
+            <button> Get Exchange Rate</button>
+
+        </form>
+    </div>
+    <script src="code.js"></script>
+    <script src="currencyConverter.js"></script>
+</body>
+</html>
